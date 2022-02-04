@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Roboto&family=Roboto+Slab&display=swap" rel="stylesheet">
+
+
+    <title>Dan_dan_gula</title>
+    <link rel="icon" href="/img/soloFlor.png">
+
+    
+</head>
+<body>
+    <header>
+
+        <div class="primero">
+
+            <div class="logo">
+                <a href="/"> <img src="/img/logoFlorRosa.png" width="280"> </a>
+            </div>
+
+        </div>
+            <!--
+                <div class="segundo">
+               <form class="form0" action="#" method="GET">
+        
+                <input class="la-bara" type="text" name="barra" placeholder="Buscar productos, marcas">
+                <button class="submitt" type="submit" name="barra"><i class="fa fa-search"></i></button>
+                 </form>
+         
+            </div>
+            -->
+            
+            
+    
+            <!-- 
+                    <div class="inicio">
+                        <div class="user-cirlcle"><a href="/login"><i class="fas fa-user-circle"></i></a></div>
+                        <div class="carrito"><a href="/productCart"><i class="fas fa-shopping-cart"></i></a></div>
+                    </div>
+            
+                </div>
+            
+            -->
+            
+        <div>
+            <nav class="tercero">
+                <div class="nav-barr">
+                    <ul>
+                        <li><a href="/">Home </a></li>
+                        <li><a href="#">Trabajos</a></li>
+                        <li><a href="/perfil">Quien soy</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+            </nav>
+        
+            <nav><div class="burger-menu" >
+                <div>
+                    <input type="checkbox" id="menu">
+                    <label for="menu"> <i class="fa fa-bars burger"></i> </label>
+                
+            
+                    <ul class="burger-menu2">
+                        
+                            <li class="desplegableM"><a href="/">Home </a></li>
+                            <li class="desplegableM"><a href="#">Trabajos</a></li>
+                            <li class="desplegableM"><a href="/perfil">Quien soy</a></li>
+                            <li class="desplegableM"><a href="#">Contacto</a></li>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+
+    </div>
+
+    </header>
+    <main>
+
+        <div class="carrucel">
+
+        </div>
+
+    </main>
+    
+</body>
+</html>
+
+
+----------------------------------------------------------------
+
+
+       <div>
+            <!--
+            <nav class="tercero">
+                <div class="nav-barr">
+                    <ul>
+                        <li><a href="/">Home </a></li>
+                        <li><a href="#">Trabajos</a></li>
+                        <li><a href="/perfil">Quien soy</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+            </nav>
+        -->
+            <nav>
+                <div class="m-menu" >
+                    <div class="m-header" >
+                    <div>
+                        <input type="checkbox" id="menu">
+                        <label for="menu"> <i class="fa fa-bars burger"></i> </label>
+                        
+                    </div>
+
+                    <div class="m-menu m-menu--show">
+                        
+                        
+                            <ul class="m-menu__list">
+                                    <li class="desplegableM">
+                                        <button type="button"><span><a href="/"> <span>Home</span> </a></span></button>
+                                    </li>
+                                    <li class="desplegableM">
+                                        <button type="button"><span><a href="/trabajos"> <span>Trabajos</span></a></span></button>
+                                    </li>
+                                    <li class="desplegableM">
+                                        <button type="button"><span><a href="/perfil"> <span>Quien soy</span></a></span></button>
+                                    </li>
+                                    <li class="desplegableM">
+                                        <button type="button"><span><a href="/contacto">Contacto</a></span></button>
+                                    </li>
+                            </ul>
+                        
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        </div>
+
+    </div>
+
+    </header>

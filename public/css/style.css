@@ -1,0 +1,526 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p{
+    font-family: roboto;
+}
+
+body{
+    background-color: #ffff;
+    /*font-family: 'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;*/
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    
+
+}
+
+.logo{
+    text-align: center;
+    width: 100%;
+}
+
+
+/************************************perfil********************************/
+.quienSoy{
+    display: flex;
+    margin: 20px;
+}
+
+.otroLadoDeFoto{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
+
+.redesSociales{
+    
+    font-size: 30px;
+}
+
+/************************************perfil********************************/
+
+/*la vara de menu desplegable y responsive inicio solo queda un @****************header 1/2*****/
+/*la vara de menu desplegable y responsive inicio*/
+/*hasta aca con esto funca*/
+/*hamburgesa menu*/
+
+div.burger-menu{
+    text-align: center;
+}
+
+.burger-menu2{
+    display: none;
+    margin-top:0;
+    padding: 0;
+}
+
+#menu:checked  ~ .burger-menu2 {
+    display:block;
+}
+#menu {
+display: none;
+}
+
+.menu {
+    box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+}
+
+.desplegableM button{
+    width: 100%;
+    height: 30px;
+    background: #f7b3ea;
+    
+    border: none;
+}
+
+/*hasta aca con esto funca*/
+.desplegableM a{
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    border-bottom: 2px solid #f7b3ea;
+    /*max-width: 200px;
+    background: #cc3fb5;
+    
+    text-shadow: 1px 1px #bb0b9eb8;*/
+    /*padding: 9px 111px;*/
+} 
+
+/* Estilo del boton cuando se pasa el mouse por encima*/
+.menu:hover{
+    background: #00aa25;
+}
+
+/* Estilo del boton cuando el menú está expandido*/
+#menu:checked ~ .menu {
+    background: #00aa41; 
+}
+
+.desplegableM{
+    display: block;
+    /*background:#f7b3ea ;color de fondo del desplegable*/
+    
+    margin: 0;
+    /*padding: 10px;*/
+    list-style: none;
+    /*border: 1px solid #cc3fb5; es las lineas intermedias del despligable*/
+
+}
+
+/*Estilo cuando el mouse pasa encima de cada link del menu*/
+.desplegableM:hover {
+    filter: brightness(110%);
+}
+/*este es el cubito de 3 lineas*/
+div.burger-menu i {
+    background-color: #cc3fb5;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+}
+/*hamburgesa menu*/
+
+
+/* navegador-header*/
+.tercero{
+    /*background-color: rgb(204, 43, 118);*/
+    
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.tercero .nav-barr{
+    display: none;
+}
+
+.nav-barr ul{
+    margin: 10px;
+    text-align: center;
+    list-style-type: none;
+}
+
+header .nav-barr a{
+    list-style-type: none;
+    font-size: 20px;
+    text-decoration:none;
+    font-weight:bolder;
+    color: #362b2b; 
+    text-align: center;
+    display: inline-block;
+}
+
+header ul li a:hover{
+    background: #f7b3ea;
+    
+    color: black;
+    border-radius: 3px;
+    
+}
+/* navegador-header*/
+/*la vara de menu desplegable y responsive fin solo queda un @****************header 1/2*****/
+
+
+
+
+@media (min-width: 361px){/*significa q apartir de 361px se van a aplicar estos cambios*/
+    /*la vara de menu desplegable y responsive inicio unico @****************header 2/2*****/
+    /*parte header */
+    header .burger-menu{
+        display: none;
+    }
+
+    .tercero .nav-barr{
+        text-align: center;
+        margin: auto;
+        display: flex;
+        margin: 0 3%;
+    }
+
+    header .nav-barr{
+        display: flex;
+        justify-content: center;
+        
+        padding: 0 8px 0px 8px;
+    }
+
+    .nav-barr ul{
+        display: flex;
+    }
+    .nav-barr ul a{
+        margin: 0 5px;
+        display: block;
+        padding: 3px 10px;
+        
+    }
+    
+
+    .fotoMia img{
+        border-radius: 15px;
+    }
+}
+/*la vara de menu desplegable y responsive fin unico @****************header 2/2*****/
+
+/********************************************************registro/contacto***********/
+
+
+.registro-inicio, .contraseñass{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+input, button{
+    max-width: 100%;
+    padding: 9px;
+    margin: 10px 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.subtitulo{
+    font-weight: bold;
+    padding: 10px 5px;
+}
+
+
+/*boton envio y borrar*/
+.botones{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.botones .buttoon{
+    width: 50%;
+    background-color: #1259c3;
+    border: solid 1px #666;
+
+}
+
+.botones button[type='submit']:hover{
+    background-color: #0022AA;
+}
+
+.botones a {
+    text-decoration: none;
+    color:white;
+}
+
+.botones button[type="reset"]{
+    color: white;
+}
+
+.botones button[type="reset"]:hover{
+    
+    background-color: #0022AA;
+}
+
+@media(min-width: 361px){
+    #main-formu{
+        margin: 40px auto;
+        max-width: 60%;
+    }
+}
+
+@media(min-width: 769px){
+    #main-formu{
+        margin: 40px auto;
+        max-width: 30%;
+    }
+}
+/********************************************************registro/contacto***********/
+
+/**********************************CARRUCEL***********************************/
+#contentItemCarrucel{
+    /*border: 5PX solid black;*/
+    height: 600px;
+    
+    overflow: hidden;
+    
+    
+}
+
+.itemCarrucel{/*elemento padre*/
+    /*border: 1px solid black;*/
+    height: 100%;
+    position: relative;
+}
+.tarjetaCarrucel{
+    
+    height: 100%;
+}
+.flechasCarrucel{
+    /*background-color: #6273b8;****sino lo saco lo pinta todo*****/
+    
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;/*centrar desde eje y*/
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/** como ya tiene imagen no es necesario esto, igual no afecta en nada
+#tarjetaCarrucel-1{
+    background-color: #5ecef0;
+}
+
+#tarjetaCarrucel-2{
+    background-color: #f05e83;
+}
+
+#tarjetaCarrucel-3{
+    background-color: #bec92b;
+}
+**/
+.aCarrucel{
+    text-decoration: none; /*saca la linea azul de link*/
+    
+}
+
+.flechasCarrucel i{
+    color: white;
+}
+#contenPuntos{
+    /*background-color: #666;*/
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+#contenPuntos > a{ /*solo afecta a las 'a' contenidas en #contenPuntos*/
+    font-size: 1em;
+    text-decoration: none;
+    color:#929090;
+}
+
+#contenPuntos > a :hover{
+    color:#3f3f3f;
+}
+
+.tarjetaCarrucel img{
+    width: 100%;
+    height: auto;
+}
+/**********************************CARRUCEL***********************************/
+
+/*********************************productos***************************/
+
+div.last-visit,
+div.offers{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.precio{
+    font-size: 18px;
+    width: 30%;
+}
+
+.descuentos{
+    width: 70%;
+}
+
+.descuentos,
+.descripcion{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h3,
+.descripcion{
+    color: #666;
+}
+
+.descripcion{
+    display: none;
+    margin-top: 20px;
+}
+
+section.banner img{
+    width: 100%;
+}
+
+
+
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section article{
+    background-color: #fff;    
+    margin: 10px 0px;
+}
+
+main section article img{
+    width: 100%;
+}
+
+main section article i,
+.descuentos{
+    color: #39b54a;
+}
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+main section h3{
+    margin: 20px 0px;
+}
+
+main section div.products article i{
+    transition: transform 1s;
+}
+
+main section div.products article:hover i{
+    transform: rotate(-90deg);
+}
+
+article div.main-article{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
+}
+main section article:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+main section article:hover .descripcion{
+    display: block;
+}
+
+
+
+
+@media (min-width: 361px){
+    main section article{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);}
+
+
+    main section div.products{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    main section div.products article{
+        width: 45%;
+    }
+
+    .precio,
+    .descuentos{
+        width: 50%;
+    }
+
+
+
+
+
+    
+    header.top-header, .top-header{
+        display: flex;
+        justify-content: space-around;
+    }
+
+}
+
+@media (min-width: 769px){
+    main section div.products article{
+        width: 22%;
+    }
+
+}
+/*********************************productos***************************/
+
+
+
+  .descripcion-contenido input{
+    width: 100%;
+    padding:  9px 9px 250px 9px;
+    margin: 10px 5px;
+    border-radius: 5px;
+    border: none;
+  }
+
+
+
+    
